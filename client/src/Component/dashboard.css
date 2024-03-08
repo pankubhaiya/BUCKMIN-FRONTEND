@@ -1,0 +1,36 @@
+.dashboard-container {
+    display: flex;
+    /* border:  2px solid red; */
+    height: 98%;
+  }
+  .main{
+    height: 90%;
+  }
+
+  
+  .first-div{
+    display: flex;
+    width: 60%;
+    margin: 15px;
+    height: 98%;
+    border:  2px solid rgb(26, 23, 23);
+  }
+  .second-div{
+    display: flex;
+    margin: 15px;
+    height: 98%;
+    width: 30%;
+    border:  2px solid rgb(26, 23, 23);
+  }
+  .f-row{
+    display: flex;
+    width: 100%;
+ 
+  }
+  .f-row>div{
+    border:  2px solid rgb(38, 183, 57);
+    height: 120px;
+    width: 30%;
+    margin: 10px;
+  }
+
