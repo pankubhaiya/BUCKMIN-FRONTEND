@@ -9,18 +9,17 @@
 
   
   .first-div{
-    display: flex;
     width: 60%;
     margin: 15px;
-    height: 98%;
-    border:  2px solid rgb(26, 23, 23);
+    height: 95%;
+  
   }
   .second-div{
     display: flex;
     margin: 15px;
-    height: 98%;
+    height: 95%;
     width: 30%;
-    border:  2px solid rgb(26, 23, 23);
+    /* border:  2px solid rgb(26, 23, 23); */
   }
   .f-row{
     display: flex;
@@ -34,4 +33,31 @@
     margin: 10px;
     border-radius: 5px;
   }
-
+  .s-row{
+    display: flex;
+    width: 100%;
+   padding: -12px;
+  }
+  .s-row>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    height: 200px;
+    width: 45%;
+    /* margin: 17px; */
+    border-radius: 5px;
+  }
+  .sf-row{
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .btn{
+    border-radius: 2px;
+    padding: 5px;
+    width: 140px;
+  }
+  .btn-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 17px;
+    padding: 5px;
+  }

@@ -26,7 +26,7 @@ export default function Header({ Account }) {
   return (
     <div className="w-full h-auto ml-16 ">
       <div className="w-full h-screen  rounded-tl-md ">
-        <div className="h-[66px] shadow-sm shadow-[#FFF1EB] shadow-opacity-[30%]  flex items-center justify-between bg-white pl-8 pr-8">
+        <div className="h-[66px] shadow-sm shadow-[#FFF1EB] shadow-opacity-[30%]  flex items-center justify-between bg-white  pr-8">
           <div className="">
            
             <div className="relative">
