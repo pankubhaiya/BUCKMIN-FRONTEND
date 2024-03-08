@@ -28,9 +28,10 @@
  
   }
   .f-row>div{
-    border:  2px solid rgb(38, 183, 57);
+    
     height: 120px;
     width: 30%;
     margin: 10px;
+    border-radius: 5px;
   }
 
