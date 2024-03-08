@@ -83,6 +83,10 @@ padding: 20px;
     height: 200px;
     overflow-y: scroll;
 }
+.s-data-div{
+    height: 250px;
+    overflow-y: scroll;
+}
 .data-ren-div{
     display: flex;
     margin: 15px;
@@ -101,8 +105,13 @@ padding: 20px;
 }
 .upannu{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-    height: auto;
+    height: 350px;
     width: 95%;
     /* margin: 10px; */
     border-radius: 5px;
+}
+.new{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

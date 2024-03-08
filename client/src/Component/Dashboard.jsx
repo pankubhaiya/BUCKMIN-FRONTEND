@@ -12,6 +12,13 @@ export default function Dashboard() {
       time: "Yesterday, 09:15 AM",
     },
   ];
+  const pdata = [
+    { text: "Review candidate applications", time: "5 Minutes ago" },
+  ];
+  const odata = [
+    { text: "Review candidate applications", time: "5 Minutes ago" },
+    { text: "Review candidate applications", time: "5 Minutes ago" },
+  ];
   return (
     <div className="main">
       <p className="pl-6 font-bold text-black text-4xl">Dashboard</p>
@@ -57,31 +64,28 @@ export default function Dashboard() {
               </select>
             </div>
             <div className="data-div">
-              <div >
+              <div>
                 {data.map((item, index) => (
                   <div key={index} className="data-ren-div">
                     <div>
                       <h1>{item.text}</h1>
                       <p>{item.time}</p>
-                      
                     </div>
                     <div className="icon">
-                        <span>
-                          <BsPinAngleFill />
-                        </span>
-                        <span>
-                          <HiOutlineDotsHorizontal />
-                        </span>
-                      </div>
+                      <span>
+                        <BsPinAngleFill />
+                      </span>
+                      <span>
+                        <HiOutlineDotsHorizontal />
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div>
-              <h1 className="text-[#FF5151] text-center font-semibold">
-                See All Announcement
-              </h1>
-            </div>
+            <h1 className="new text-[#FF5151] text-center font-semibold">
+              See All Announcement
+            </h1>
           </div>
         </div>
         <div className="second-div ">
@@ -106,38 +110,54 @@ export default function Dashboard() {
               </button>
             </div>
           </div>
-         
+
           <div className="upannu mt-8 w-full">
             <div className="ann-div w-full">
-              <h1 className="text-black font-bold text-sm">Upcoming Schedule</h1>
+              <h1 className="text-black font-bold text-sm">
+                Upcoming Schedule
+              </h1>
               <select className="select text-sm" name="" id="">
                 <option value="Today">Today, 13 Sep 2021</option>
               </select>
             </div>
-            <div className="data-div">
-              <div >
-                {data.map((item, index) => (
+            <div className="s-data-div">
+              <div>
+                <p className="text-[#686868] text-sm ml-6">Priority</p>
+                {pdata.map((item, index) => (
+                  <div key={index} className="data-ren-div">
+                  <div>
+                      <h1 className="text-lg text-black">{item.text}</h1>
+                      <p className="text-sm text-[#686868]">{item.time}</p>
+                    </div>
+                    <div className="icon">
+                      <span>
+                        <HiOutlineDotsHorizontal />
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <p className="text-[#686868] text-sm ml-6">Other</p>
+                {odata.map((item, index) => (
                   <div key={index} className="data-ren-div">
                     <div>
-                      <h1>{item.text}</h1>
-                      <p>{item.time}</p>
-                      
+                      <h1 className="text-lg text-black">{item.text}</h1>
+                      <p className="text-sm text-[#686868]">{item.time}</p>
                     </div>
-                    <div  className="icon">
-                        <span>
-                          <HiOutlineDotsHorizontal />
-                        </span>
-                      </div>
+                    <div className="icon">
+                      <span>
+                        <HiOutlineDotsHorizontal />
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div>
-              <h1 className="text-[#FF5151] text-center font-semibold">
-              Creat a New Schedule
-              </h1>
-            </div>
           </div>
+          <h1 className="new text-[#FF5151] text-center font-semibold">
+            Creat a New Schedule
+          </h1>
         </div>
       </div>
     </div>
