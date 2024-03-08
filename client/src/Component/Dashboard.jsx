@@ -125,9 +125,6 @@ export default function Dashboard() {
                     </div>
                     <div  className="icon">
                         <span>
-                          <BsPinAngleFill />
-                        </span>
-                        <span>
                           <HiOutlineDotsHorizontal />
                         </span>
                       </div>
