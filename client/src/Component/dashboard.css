@@ -15,7 +15,7 @@
   
   }
   .second-div{
-    display: flex;
+ 
     margin: 15px;
     height: 95%;
     width: 30%;
@@ -61,3 +61,48 @@
     margin: 17px;
     padding: 5px;
   }
+  .annu{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    height: auto;
+    width: 95%;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .ann-div{
+    display: flex;
+justify-content: space-between;
+padding: 20px;
+  }
+.select{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 2px;
+}
+.data-div{
+
+    /* border: solid 2px red; */
+    height: 200px;
+    overflow-y: scroll;
+}
+.data-ren-div{
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+   justify-content: space-between;
+}
+.icon{
+    display: flex;
+    
+}
+.icon>span{
+    margin: 10px;
+    padding: 5px;
+}
+.upannu{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    height: auto;
+    width: 95%;
+    /* margin: 10px; */
+    border-radius: 5px;
+}

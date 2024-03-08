@@ -1,7 +1,17 @@
 import React from "react";
 import "./dashboard.css";
 
+import { BsPinAngleFill } from "react-icons/bs";
+import { HiOutlineDotsHorizontal } from "react-icons/hi";
 export default function Dashboard() {
+  const data = [
+    { text: "Outing schedule for every department", time: "5 Minutes ago" },
+    { text: "Meeting HR Department", time: "Yesterday, 12:30 PM" },
+    {
+      text: "IT Department needs two more talents for UX/UI Designer position",
+      time: "Yesterday, 09:15 AM",
+    },
+  ];
   return (
     <div className="main">
       <p className="pl-6 font-bold text-black text-4xl">Dashboard</p>
@@ -39,21 +49,98 @@ export default function Dashboard() {
               <p className="text-sm text-[#686868]">10 women</p>
             </div>
           </div>
-          <div></div>
+          <div className="annu">
+            <div className="ann-div">
+              <h1 className="text-black font-bold text-2xl">Announcement</h1>
+              <select className="select" name="" id="">
+                <option value="Today">Today, 13 Sep 2021</option>
+              </select>
+            </div>
+            <div className="data-div">
+              <div >
+                {data.map((item, index) => (
+                  <div key={index} className="data-ren-div">
+                    <div>
+                      <h1>{item.text}</h1>
+                      <p>{item.time}</p>
+                      
+                    </div>
+                    <div className="icon">
+                        <span>
+                          <BsPinAngleFill />
+                        </span>
+                        <span>
+                          <HiOutlineDotsHorizontal />
+                        </span>
+                      </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h1 className="text-[#FF5151] text-center font-semibold">
+                See All Announcement
+              </h1>
+            </div>
+          </div>
         </div>
         <div className="second-div ">
           <div className="sf-row bg-[#161E54]  w-full ">
-          <h1 className="bg-[#1B204A] text-white m-1 p-2 font-bold text-lg pl-4">Recently Activity</h1>
-          <p className="text-sm text-[#686868] m-1   pl-4">10.40 AM, Fri 10 Sept 2021</p>
-          <p className="text-xl text-white m-1   pl-4">You Posted a New Job</p>
-          <p className=" text-sm text-white m-1 mt-2   pl-4">Kindly check the requirements and terms of work and make sure everything is right.</p>
-          <div className="btn-div">
-            <h1 className="text-white">Schedule a call </h1>
-            <button className="btn bg-[#FF5151] text-white font-bold">Schedule</button>
+            <h1 className="bg-[#1B204A] text-white m-1 p-2 font-bold text-lg pl-4">
+              Recently Activity
+            </h1>
+            <p className="text-sm text-[#686868] m-1   pl-4">
+              10.40 AM, Fri 10 Sept 2021
+            </p>
+            <p className="text-xl text-white m-1   pl-4">
+              You Posted a New Job
+            </p>
+            <p className=" text-sm text-white m-1 mt-2   pl-4">
+              Kindly check the requirements and terms of work and make sure
+              everything is right.
+            </p>
+            <div className="btn-div">
+              <h1 className="text-white">Schedule a call </h1>
+              <button className="btn bg-[#FF5151] text-white font-bold">
+                Schedule
+              </button>
+            </div>
           </div>
-
+         
+          <div className="upannu mt-8 w-full">
+            <div className="ann-div w-full">
+              <h1 className="text-black font-bold text-sm">Upcoming Schedule</h1>
+              <select className="select text-sm" name="" id="">
+                <option value="Today">Today, 13 Sep 2021</option>
+              </select>
+            </div>
+            <div className="data-div">
+              <div >
+                {data.map((item, index) => (
+                  <div key={index} className="data-ren-div">
+                    <div>
+                      <h1>{item.text}</h1>
+                      <p>{item.time}</p>
+                      
+                    </div>
+                    <div  className="icon">
+                        <span>
+                          <BsPinAngleFill />
+                        </span>
+                        <span>
+                          <HiOutlineDotsHorizontal />
+                        </span>
+                      </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h1 className="text-[#FF5151] text-center font-semibold">
+              Creat a New Schedule
+              </h1>
+            </div>
           </div>
-          <div></div>
         </div>
       </div>
     </div>

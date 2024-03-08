@@ -105,7 +105,7 @@ const DpMenu = (props) => {
           >
              {menu.map(
               (item, index) =>
-                index <= 4 && ( // Add this line to check if index is greater than 4
+                index <= 4 && (
                   <li
                     key={index}
                     className={` ${
@@ -157,7 +157,7 @@ const DpMenu = (props) => {
           >
             {menu.map(
               (item, index) =>
-                index > 4 && ( // Add this line to check if index is greater than 4
+                index > 4 && ( 
                   <li
                     key={index}
                     className={` ${
