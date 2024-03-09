@@ -172,22 +172,22 @@
     display: block;
   }
   .first-div {
-    width: 100%;
+    width: 95%;
     height: auto;
   }
   .f-row {
     display: block;
-    width: 100%;
+    width: 96%;
     height: auto;
   }
   .s-row {
     display: block;
-    width: 100%;
+    width: 96%;
     height: auto;
   }
   .f-row > div {
     height: 120px;
-    width: 100%;
+    width: 95%;
     margin: 10px;
     border-radius: 5px;
   }
@@ -195,20 +195,20 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
       rgb(209, 213, 219) 0px 0px 0px 1px inset;
     height: 200px;
-    width: 100%;
+    width: 95%;
     /* margin: 17px; */
     border-radius: 5px;
   }
   .second-div {
     margin-top: 10px;
     display: block;
-    width: 100%;
+    width: 95%;
   }
   .sf-row {
     height: 400px;
     width: 40%;
     margin: 10px;
-    width: 100%;
+    width: 95%;
   }
   .btn-div {
     display: block;
