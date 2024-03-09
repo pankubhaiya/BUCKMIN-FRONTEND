@@ -27,3 +27,90 @@
     padding: 5px;
     width: 30%;
   }
+
+.simple-react-calendar {
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .simple-react-calendar > div:first-child {
+    background-color: #FF5151;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+    border-bottom: none; 
+  }
+  
+  
+  .simple-react-calendar > div:first-child button {
+    color: white;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(2) {
+    background-color: #FF5151;
+    color: white;
+    padding: 5px;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(2) > div {
+    text-align: center;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(3) > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(3) > div > div {
+    flex: 0 0 14.28%; 
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(3) > div > div.simple-react-calendar-active {
+    background-color: #FF5151;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(3) > div > div.simple-react-calendar-disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  .calendar {
+    text-align: center;
+    margin:  auto; 
+    max-width: 600px;   }
+  
+  
+.simple-react-calendar > div:nth-child(3) > div > div {
+    flex: 0 0 14.28%; 
+    text-align: center;
+    padding: 10px;
+  }
+  
+  
+  .simple-react-calendar > div:nth-child(3) > div > div.simple-react-calendar-active {
+    background-color: #FF5151;
+    color: white;
+    border-radius: 50%;
+  }
+  
+
+  .simple-react-calendar > div:nth-child(3) > div > div.simple-react-calendar-current-date {
+    border: 2px solid #FF5151;
+    border-radius: 50%;
+  }
+
+  .select{
+    border: none;
+    padding: 2px;
+}

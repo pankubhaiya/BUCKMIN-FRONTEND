@@ -26,7 +26,7 @@ export default function Header({ Account }) {
   return (
     <div className="w-full h-auto ml-16 ">
       <div className="w-full h-screen  rounded-tl-md ">
-        <div className="h-[66px] shadow-sm shadow-[#FFF1EB] shadow-opacity-[30%]  flex items-center justify-between bg-white  pr-8 fixed top-0 w-full z-10">
+        <div className="h-[66px] shadow-sm shadow-[#FFF1EB] shadow-opacity-[30%]  flex items-center justify-between bg-white  pr-8 top-0 w-full z-10">
           <div className="">
            
             <div className="relative">
@@ -59,7 +59,7 @@ export default function Header({ Account }) {
               </div>
             </div>
           </div>
-          <div className="flex gap-5 bg-white">
+          <div className="flex gap-5 bg-white ">
             <div className="">
               <div
                 className={`flex px-4 py-2 rounded-[10px] cursor-pointer bg-white items-center w-auto`}
@@ -97,7 +97,7 @@ export default function Header({ Account }) {
           </div>
          
         </div>
-        <Dashboard/>
+          <Dashboard/>
       </div>
     
     </div>

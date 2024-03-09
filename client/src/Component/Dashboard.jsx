@@ -22,7 +22,7 @@ export default function Dashboard() {
   ];
   return (
     <div className="main">
-       <p className="pl-6 font-bold text-black text-4xl mt-20">Dashboard</p>
+       <p className="pl-6 font-bold text-black text-4xl mt-6">Dashboard</p>
       <div className="dashboard-container">
      
         <div className="first-div">
