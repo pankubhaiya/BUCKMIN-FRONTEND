@@ -114,3 +114,14 @@
     border: none;
     padding: 2px;
 }
+
+
+.team-div {
+    height: 170px;
+    /* margin-top: 70px; */
+    overflow-y: scroll;
+  }
+  
+  .team-div::-webkit-scrollbar {
+    display: none;
+  }
