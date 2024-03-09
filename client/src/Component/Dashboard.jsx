@@ -28,18 +28,18 @@ export default function Dashboard() {
         <div className="first-div">
           <div className="f-row">
             <div className="bg-[#FFEFE7]  p-4 ">
-              <p className="font-bold text-black text-lg">Available position</p>
+              <p className="font-bold text-black text-sm">Available position</p>
               <p className="text-black font-bold text-3xl mt-1 mb-1">24</p>
               <p className="text-[#FF5151] text-sm">4 Urgently needed</p>
             </div>
 
             <div className="bg-[#E8F0FB]  p-4 ">
-              <p className="font-bold text-black text-lg">Job Open</p>
+              <p className="font-bold text-black text-sm">Job Open</p>
               <p className="text-black font-bold text-3xl mt-1 mb-1">10</p>
               <p className="text-[#3786F1] text-sm">4 Active hiring</p>
             </div>
             <div className="bg-[#FDEBF9]  p-4 ">
-              <p className="font-bold text-black text-lg">New Employees</p>
+              <p className="font-bold text-black text-sm">New Employees</p>
               <p className="text-black font-bold text-3xl mt-1 mb-1">24</p>
               <p className="text-[#EE61CF] text-sm">4 Department</p>
             </div>
@@ -56,6 +56,7 @@ export default function Dashboard() {
               <p className="text-black font-bold text-5xl mt-2 mb-8">16</p>
               <p className="text-sm text-[#686868]">6 men</p>
               <p className="text-sm text-[#686868]">10 women</p>
+              
             </div>
           </div>
           <div className="annu">
@@ -91,7 +92,7 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="second-div ">
-          <div className="sf-row bg-[#161E54]  w-full ">
+          <div className="sf-row bg-[#161E54]   ">
             <h1 className="bg-[#1B204A] text-white m-1 p-2 font-bold text-lg pl-4">
               Recently Activity
             </h1>

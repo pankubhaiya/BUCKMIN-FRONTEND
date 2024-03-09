@@ -32,7 +32,7 @@ const ToggleDiv = () => {
   };
 
   return (
-    <div>
+    <div >
       <button
         onClick={toggleDiv}
         className="btn bg-[#FF5151] text-white font-bold w-24"
@@ -48,8 +48,8 @@ const ToggleDiv = () => {
             >
               X
             </button>
-            <div className="flex w-full h-auto">
-              <div className=" w-80 bg-[#FAFAFA] p-4 rounded-tl-lg rounded-bl-lg">
+            <div className="le-div  w-full h-auto">
+              <div className="le-s-div w-80 bg-[#FAFAFA] p-4 rounded-tl-lg rounded-bl-lg">
                 <div
                   className={`mt-24 ml-6 ${
                     selectedOption === "time"
@@ -89,7 +89,7 @@ const ToggleDiv = () => {
                   The following time will be set for the meeting
                 </p>
                 <div className="">
-                  <form className="max-w-sm mx-auto">
+                  <form className=" max-w-sm mx-auto">
                     <div className="flex mb-2 space-x-2 rtl:space-x-reverse">
                       {[...Array(4)].map((_, index) => (
                         <div key={index}>
@@ -298,7 +298,7 @@ const ToggleDiv = () => {
                 <div>
                   {" "}
                   <select
-                    className=" p-2 mb-6 w-80  border rounded-md"
+                    className="select-team p-2 mb-6  border rounded-md"
                     name=""
                     id=""
                   >

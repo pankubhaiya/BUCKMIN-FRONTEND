@@ -20,7 +20,7 @@ const Home = () => {
 
     return (
         <div className="h-screen flex w-screen bg-white">
-            {windowWidth >= 600 && <DpMenu />}
+            {windowWidth >= 650 && <DpMenu />}
             <Header />
         </div>
     );
