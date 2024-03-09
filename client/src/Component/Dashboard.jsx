@@ -3,6 +3,7 @@ import "./dashboard.css";
 
 import { BsPinAngleFill } from "react-icons/bs";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
+import ToggleDiv from "./Schedule";
 export default function Dashboard() {
   const data = [
     { text: "Outing schedule for every department", time: "5 Minutes ago" },
@@ -21,8 +22,9 @@ export default function Dashboard() {
   ];
   return (
     <div className="main">
-      <p className="pl-6 font-bold text-black text-4xl">Dashboard</p>
+       <p className="pl-6 font-bold text-black text-4xl mt-20">Dashboard</p>
       <div className="dashboard-container">
+     
         <div className="first-div">
           <div className="f-row">
             <div className="bg-[#FFEFE7]  p-4 ">
@@ -99,15 +101,14 @@ export default function Dashboard() {
             <p className="text-xl text-white m-1   pl-4">
               You Posted a New Job
             </p>
-            <p className=" text-sm text-white m-1 mt-2   pl-4">
+            <p className=" text-sm text-[#686868] m-1 mt-2   pl-4">
               Kindly check the requirements and terms of work and make sure
               everything is right.
             </p>
             <div className="btn-div">
               <h1 className="text-white">Schedule a call </h1>
-              <button className="btn bg-[#FF5151] text-white font-bold">
-                Schedule
-              </button>
+              
+              <ToggleDiv />
             </div>
           </div>
 
