@@ -157,7 +157,7 @@ const ToggleDiv = () => {
                       ? "text-[#FF5151] font-semibold"
                       : "hover:text-[#FF5151]"
                   }`}
-                  onClick={() => setSelectedOption("date")} // Set selected option to "date"
+                  onClick={() => setSelectedOption("date")} 
                 >
                   Date
                 </div>
@@ -167,7 +167,7 @@ const ToggleDiv = () => {
                       ? "text-[#FF5151] font-semibold"
                       : "hover:text-[#FF5151]"
                   }`}
-                  onClick={() => setSelectedOption("addMember")} // Set selected option to "addMember"
+                  onClick={() => setSelectedOption("addMember")} 
                 >
                   Add Team member
                 </div>
@@ -208,7 +208,7 @@ const ToggleDiv = () => {
                       ? "text-[#FF5151] font-semibold"
                       : "hover:text-[#FF5151]"
                   }`}
-                  onClick={() => setSelectedOption("time")} // Set selected option to "time"
+                  onClick={() => setSelectedOption("time")} 
                 >
                   Time
                 </div>
@@ -218,7 +218,7 @@ const ToggleDiv = () => {
                       ? "text-[#FF5151] font-semibold"
                       : "hover:text-[#FF5151]"
                   }`}
-                  onClick={() => setSelectedOption("date")} // Set selected option to "date"
+                  onClick={() => setSelectedOption("date")} 
                 >
                   Date
                 </div>

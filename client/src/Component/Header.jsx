@@ -5,7 +5,7 @@ import { LuIndianRupee } from "react-icons/lu";
 import { FiChevronDown } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
-import { IoMdNotifications} from "react-icons/io";
+import { IoMdNotifications } from "react-icons/io";
 import { RiMessage2Fill } from "react-icons/ri";
 import Dashboard from "./Dashboard";
 export default function Header({ Account }) {
@@ -20,7 +20,7 @@ export default function Header({ Account }) {
 
   const handleLogout = () => {
     sessionStorage.clear();
-    // Account = false;
+    
     navigate("/");
   };
   return (
@@ -28,21 +28,19 @@ export default function Header({ Account }) {
       <div className="w-full h-screen  rounded-tl-md ">
         <div className="h-[66px] shadow-sm shadow-[#FFF1EB] shadow-opacity-[30%]  flex items-center justify-between bg-white  pr-8 top-0 w-full z-10">
           <div className="">
-           
             <div className="relative">
-              <input
-            
-                className="block w-full p-3 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-opacity-50 focus:outline-none"
-                placeholder="Search"
-                
-              />
+              <div className="flex ">
+                <button className="hamburger-button md:hidden">☰</button>
 
-              <div
-               
-                className="text-white absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 "
-              >
+                <input
+                  className="block w-full p-3 ml-10 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-opacity-50 focus:outline-none "
+                  placeholder="Search"
+                />
+              </div>
+
+              <div className="text-white absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 ">
                 <svg
-                  className="w-4 h-4  text-gray-500 dark:text-gray-400"
+                  className="w-4 h-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -75,9 +73,9 @@ export default function Header({ Account }) {
                         alt="user"
                       />
                     </div>
-                    <h1>Pankaj jain</h1>
+                    <h1 className="user-name hidden md:block">Pankaj jain</h1>
                   </div>
-                  
+
                   <div className="">
                     <button
                       type="button"
@@ -85,21 +83,16 @@ export default function Header({ Account }) {
                         setNav(!nav);
                       }}
                     >
-                      <FiChevronDown
-                        size={24}
-                        className={`transition-all `}
-                      />
+                      <FiChevronDown size={24} className={`transition-all `} />
                     </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-         
         </div>
-          <Dashboard/>
+        <Dashboard />
       </div>
-    
     </div>
   );
 }

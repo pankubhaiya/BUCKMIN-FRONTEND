@@ -11,13 +11,25 @@ import { IoMdSettings } from "react-icons/io";
 import { FcDepartment } from "react-icons/fc";
 import { IoIosPersonAdd } from "react-icons/io";
 const DpMenu = (props) => {
-  // const handleLogout = () => {
-  //     sessionStorage.clear();
-  //     navigate("/Signup");
-  // };
-  // const navigate = useNavigate();
   const [open, setOpen] = useState(true);
-  // const location = useLocation();
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1200) {
+        setOpen(false);
+      } else {
+        setOpen(true);
+      }
+    };
+
+    handleResize(); 
+
+    window.addEventListener('resize', handleResize); 
+
+    return () => {
+      window.removeEventListener('resize', handleResize); 
+    };
+  }, []);
   const [selectedMenuItem, setSelectedMenuItem] = useState(() => {
     return parseInt(sessionStorage.getItem("selectedMenuItem")) || 0;
   });
@@ -74,8 +86,8 @@ const DpMenu = (props) => {
       >
         <div
           className={` ease-in-out duration-500 cursor-default tracking-wide ${
-            open ? "w-[90%] h-[42px]" : "w-[90%]"
-          } flex items-center justify-center text-4xl font-bold text-gray-900 dark:text-white mb-8`}
+            open ? "w-[90%] text-4xl h-[42px]" : "w-[90%]"
+          } flex items-center justify-center  font-bold text-gray-900 dark:text-white mb-8`}
         >
           WeHR
         </div>
@@ -86,12 +98,12 @@ const DpMenu = (props) => {
           }`}
         >
           <div
-            className={`origin-left w-[260px] text-xl font-bold flex items-center gap-1 ease-in-out duration-700 pl-5 text-gray-500`}
+            className={`origin-left w-[260px] text-xl font-bold flex items-center gap-1 ease-in-out duration-700  text-gray-500`}
           >
             <div>
               <span
-                className={`origin-left ease-in-out ${!open && "hidden"} ${
-                  open ? "ml-2" : "ml-0"
+                className={`origin-left ease-in-out ${!open } ${
+                  open ? "ml-2 pl-5" : "ml-0 mr-0 text-sm text-center"
                 }  text-[#B2B2B2] duration-500 cursor-default tracking-wide text-xs  font-semibold  `}
               >
                 MAIN MENU
@@ -138,12 +150,12 @@ const DpMenu = (props) => {
             )}
           </ul>
           <div
-            className={` origin-left w-[260px]  text-xl  font-bold flex   items-center gap-1  ease-in-out duration-700 mt-16 pl-5`}
+            className={` origin-left w-[260px]  text-xl  font-bold flex   items-center gap-1  ease-in-out duration-700 mt-16 `}
           >
             <div className="mt-b ">
               <span
-                className={`origin-left ease-in-out ${!open && "hidden"} ${
-                  open ? "ml-2" : "ml-0"
+                className={`origin-left ease-in-out ${!open } ${
+                    open ? "ml-2 pl-5" : "ml-0 mr-0 text-sm text-center"
                 }  text-[#B2B2B2] duration-500 cursor-default tracking-wide text-xs  font-semibold `}
               >
                 OTHER

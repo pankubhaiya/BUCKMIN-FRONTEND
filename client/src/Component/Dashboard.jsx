@@ -155,10 +155,11 @@ export default function Dashboard() {
                 ))}
               </div>
             </div>
-          </div>
-          <h1 className="new text-[#FF5151] text-center font-semibold">
+            <h1 className="new text-[#FF5151] text-center font-semibold">
             Creat a New Schedule
           </h1>
+          </div>
+         
         </div>
       </div>
     </div>
